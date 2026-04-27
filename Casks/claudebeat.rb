@@ -1,6 +1,6 @@
 cask "claudebeat" do
-  version "1.0.0"
-  sha256 "38b20974b251a25af3e4d261a2021ef0c952129b57f7b938ebbbee68faa3a6c4"
+  version "1.0.1"
+  sha256 "da58268590862fbdbd5c6ceb29f56f64d1594854f721de9cadc75f62c537d8df"
 
   url "https://github.com/taejunoh/ClaudeBeat/releases/download/v#{version}/ClaudeBeat.zip"
   name "ClaudeBeat"
