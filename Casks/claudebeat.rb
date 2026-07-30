@@ -8,6 +8,7 @@ cask "claudebeat" do
   homepage "https://claudebeat.com/"
 
   depends_on macos: :sonoma
+
   app "ClaudeBeat.app"
 
   zap trash: [
