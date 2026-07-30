@@ -7,8 +7,7 @@ cask "claudebeat" do
   desc "macOS menu bar app that monitors Claude AI token usage in real-time"
   homepage "https://claudebeat.com/"
 
-  depends_on macos: ">= :sonoma"
-
+  depends_on macos: :sonoma
   app "ClaudeBeat.app"
 
   zap trash: [
