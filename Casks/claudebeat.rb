@@ -4,14 +4,12 @@ cask "claudebeat" do
 
   url "https://github.com/taejunoh/ClaudeBeat/releases/download/v#{version}/ClaudeBeat.zip"
   name "ClaudeBeat"
-  desc "macOS menu bar app that monitors Claude AI token usage in real-time"
+  desc "Menu bar app that monitors Claude AI token usage in real-time"
   homepage "https://claudebeat.com/"
 
   depends_on macos: :sonoma
 
   app "ClaudeBeat.app"
 
-  zap trash: [
-    "~/Library/Preferences/com.claudebeat.macos.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.claudebeat.macos.plist"
 end
