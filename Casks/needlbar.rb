@@ -1,6 +1,6 @@
 cask "needlbar" do
-  version "0.3.1"
-  sha256 "7e77884da7542cb05cdc15104a4f31e278f0ec8d771a21eca2fc4866d3e6203d"
+  version "0.3.2"
+  sha256 "3db2e6bb7aadf7eb1bb26de29139b95073a866428d706f4fc08b6314e4b741c3"
 
   url "https://github.com/taejunoh/needlbar/releases/download/v#{version}/Needlbar-macos-arm64.zip"
   name "Needlbar"
