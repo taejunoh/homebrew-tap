@@ -2,9 +2,8 @@ class AgentUsageReserve < Formula
   desc "Manage a local usage-reserve policy in Codex and Claude global instructions"
   homepage "https://github.com/taejunoh/agent-usage-reserve"
   url "https://github.com/taejunoh/agent-usage-reserve/releases/download/v0.2.0/agent-usage-reserve_0.2.0_darwin_arm64.tar.gz"
-  version "0.2.0"
-  license "MIT"
   sha256 "33c9991bc603e1e601a254ad38b4a189eeeda29c88be3d3e877d302bc4fde59d"
+  license "MIT"
 
   on_macos do
     on_arm do
@@ -32,6 +31,13 @@ class AgentUsageReserve < Formula
     bin.install "agent-usage-reserve"
   end
 
+  def caveats
+    <<~EOS
+      Run agent-usage-reserve enable to activate the policy.
+      Run agent-usage-reserve disable before uninstalling to remove it.
+    EOS
+  end
+
   test do
     ENV["CODEX_HOME"] = (testpath/"codex-home").to_s
     ENV["CLAUDE_CONFIG_DIR"] = (testpath/"claude-home").to_s
@@ -40,9 +46,5 @@ class AgentUsageReserve < Formula
     system bin/"agent-usage-reserve", "enable", "--only", "all"
     system bin/"agent-usage-reserve", "status"
     system bin/"agent-usage-reserve", "disable"
-  end
-
-  def caveats
-    "Run agent-usage-reserve enable to activate the policy. Run agent-usage-reserve disable before uninstalling to remove it."
   end
 end
