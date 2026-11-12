@@ -1,9 +1,9 @@
 cask "security-scan-hub" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.2.9"
-  sha256 arm:   "1aa6c5f3fe48bd0451020aa753298ce81dcb8061fc7a3d836448ef2b87fec3ec",
-         intel: "0c6fa989dfeade6411fb4f64400512eb3b6e20a134283786b03b55b8d796d761"
+  version "0.2.10"
+  sha256 arm:   "c158cfb8f095d83c389b9835cded34c69a365cd8a33f990a517806aae714c279",
+         intel: "959be970a02379fa182af889883332501c3bf8ee0fd70591c810fc9105138d17"
 
   url "https://github.com/taejunoh/security-scan-hub/releases/download/desktop-v#{version}/sec-hub-desktop-#{version}-darwin-#{arch}-notarized-prerelease.zip"
   name "Security Scan Hub"
